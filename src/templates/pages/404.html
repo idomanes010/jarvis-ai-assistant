@@ -1,0 +1,35 @@
+{% extends "layout/layout.html" %}
+
+{% block title %}
+J.A.R.V.I.S - Error 404
+{% endblock title %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/404.css') }}">
+{% endblock extra_css %}
+
+{% block content %}
+
+<div class="error-container">
+    <div class="error-panel">
+        <div class="error-code">404</div>
+        <h1 class="error-title">
+            ACCESS DENIED
+        </h1>
+
+        <p class="error-message">
+            Requested resource could not be located
+            within the J.A.R.V.I.S network.
+        </p>
+
+        <div class="error-status">
+            SYSTEM SCAN FAILED
+        </div>
+        
+        <a href="/home" class="error-btn">
+            Return To Command Center
+        </a>
+    </div>
+</div>
+
+{% endblock content %}

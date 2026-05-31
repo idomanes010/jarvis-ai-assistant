@@ -1,0 +1,26 @@
+<nav class="sidebar-nav">
+    <div class="sidebar-section">
+        <a href="/home?action=new"
+           id="sidebar-new-chat-btn"
+           class="menu-action-btn">
+            <span class="btn-icon">+</span>
+            New Chat
+        </a>
+    </div>
+
+    <div class="sidebar-section">
+        <a href="/home"
+           {% if active == "home" %}class="active"{% endif %}>
+            Home
+        </a>
+
+        <a href="/about"
+           {% if active == "about" %}class="active"{% endif %}>
+            About
+        </a>
+    </div>
+    <div class="sidebar-system-info">
+        <p>AI CORE ACTIVE</p>
+        <p>Version 1.0</p>
+    </div>
+</nav>

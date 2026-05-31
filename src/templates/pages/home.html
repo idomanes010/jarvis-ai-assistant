@@ -1,0 +1,45 @@
+{% extends "layout/layout.html" %}
+
+{% block title %}
+J.A.R.V.I.S - Home
+{% endblock title %}
+
+{% block content %}
+
+<div class="conversation-container">
+    <header class="jarvis-header">
+        <div class="jarvis-title-wrapper">
+            <h1 class="jarvis-title">SYSTEM INTERFACE</h1>
+        </div>
+    </header>
+
+    <section class="chat-welcome" id="chatWelcome">
+        <div class="welcome-content">
+            <h2 class="welcome-title">
+                Systems Online.
+            </h2>
+            <p class="welcome-text">
+                Good evening, sir.
+                How may I assist you today?
+            </p>
+        </div>
+
+    </section>
+    <section class="chat-messages" id="chatMessages" aria-live="polite"></section>
+    <div class="chat-input-container">
+        <form id="chatForm">
+            <div class="input-wrapper">
+                <label for="userInput" class="sr-only">
+                   COMMAND
+                </label>
+                <textarea id="userInput" name="message" placeholder="Awaiting command..." rows="1"
+                    maxlength="4000" autocomplete="off"></textarea>
+                <button type="submit" id="sendBtn" class="send-button" aria-label="Send message">
+                    <span class="send-icon">→</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock content %}

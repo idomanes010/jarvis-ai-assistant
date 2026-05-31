@@ -1,0 +1,85 @@
+{% extends "layout/layout.html" %}
+
+{% block title %}
+J.A.R.V.I.S - About
+{% endblock title %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock extra_css %}
+
+{% block content %}
+
+<div class="about-status">
+    <span class="status-dot"></span>
+    <span>SYSTEM DOCUMENTATION</span>
+</div>
+
+<div class="about-container">
+    <header class="about-header">
+        <h1>SYSTEM OVERVIEW</h1>
+        <p>Artificial Intelligence Conversational Interface</p>
+    </header>
+
+    <section class="about-card">
+        <h2>J.A.R.V.I.S</h2>
+        <p>
+            Welcome to the J.A.R.V.I.S Artificial Intelligence System.
+            This application provides an intelligent conversational
+            experience powered by advanced language models and modern
+            web technologies.
+
+            The system supports real-time interactions, persistent
+            conversations, secure server-side AI integration, and
+            structured data storage.
+        </p>
+    </section>
+
+    <section class="about-card">
+        <h2>SYSTEM CAPABILITIES</h2>
+        <ul>
+            <li>Natural Language Conversations</li>
+            <li>Conversation Context Retention</li>
+            <li>Persistent Message Storage</li>
+            <li>Real-Time Response Generation</li>
+            <li>Secure OpenAI Integration</li>
+        </ul>
+    </section>
+
+    <section class="about-card">
+        <h2>TECHNOLOGY STACK</h2>
+
+        <ul>
+            <li><strong>Backend Framework:</strong> Python & Flask</li>
+
+            <li><strong>Database Layer:</strong>
+                Relational Database with Custom DAL Architecture
+            </li>
+
+            <li><strong>Template Engine:</strong>
+                Jinja2 with Template Inheritance
+            </li>
+
+            <li><strong>Frontend Stack:</strong>
+                JavaScript, HTML5 and CSS
+            </li>
+
+            <li><strong>AI Integration:</strong>
+                OpenAI API
+            </li>
+        </ul>
+
+    </section>
+
+    <section class="about-card">
+        <h2>DEVELOPER PROFILE</h2>
+        <p>
+            Developed by Ido Manes as part of the
+            Full Stack Web Developer Program.
+        </p>
+    </section>
+</div>
+
+{% endblock content %}
+
+

@@ -1,0 +1,82 @@
+{
+  "info": {
+    "_postman_id": "fd80e7b4-8dbd-42d8-97b5-3769ae1ac547",
+    "name": "jarvis",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51856854",
+    "_collection_link": "https://go.postman.co/collection/51856854-fd80e7b4-8dbd-42d8-97b5-3769ae1ac547?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "create conversation",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6NSwiZmlyc3ROYW1lIjoiaWRvMDAxMSIsImxhc3ROYW1lIjoibWFuZXMiLCJlbWFpbCI6Imlkb0BnYW1pbC5jb20iLCJyb2xlIjoidXNlciJ9LCJpYXQiOjE3NzU0OTM5MTIsImV4cCI6MTc3NTUwNDcxMn0.BShbjN8U1njT6wZcoalY2C13R5nNRK3cq4I45Pb4edE",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \r\n  how are you?\r\n  \r\n}",
+          "options": {
+            "raw": {
+              "language": "text"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/conversations",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "conversations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "add messages to converastion",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6NSwiZmlyc3ROYW1lIjoiaWRvMDAxMSIsImxhc3ROYW1lIjoibWFuZXMiLCJlbWFpbCI6Imlkb0BnYW1pbC5jb20iLCJyb2xlIjoidXNlciJ9LCJpYXQiOjE3NzU0OTM5MTIsImV4cCI6MTc3NTUwNDcxMn0.BShbjN8U1njT6wZcoalY2C13R5nNRK3cq4I45Pb4edE",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"content\": \"what day of the week it is?\"\r\n  \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/conversations/33",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "conversations",
+            "33"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
